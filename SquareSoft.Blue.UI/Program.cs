@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using SquareSoft.Blue.UI;
+using SquareSoft.Blue.UI.Stock;
+using SquareSoft.Blue.UI.Staff;
+using SquareSoft.Blue.UI.DashBoard;
+
+namespace UI
+{
+    static class Program
+    {
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Login());
+        }
+    }
+}

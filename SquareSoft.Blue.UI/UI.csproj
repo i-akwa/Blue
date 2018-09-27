@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D808112F-EA84-4D99-819B-B461069BB0FA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SquareSoft.Blue.UI</RootNamespace>
+    <AssemblyName>UI</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\Visual Studio 2015\Projects\BLUE\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\Visual Studio 2015\Projects\BLUE\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Visual Studio 2015\Projects\BLUE\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\Visual Studio 2015\Projects\BLUE\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BlueControls\Footer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlueControls\Footer.Designer.cs">
+      <DependentUpon>Footer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlueControls\Header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlueControls\Header.Designer.cs">
+      <DependentUpon>Header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlueControls\HeaderPages.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlueControls\HeaderPages.Designer.cs">
+      <DependentUpon>HeaderPages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BlueControls\Menu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BlueControls\Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blueinventoryDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>blueinventoryDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="blueinventoryDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>blueinventoryDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard\ViewBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard\ViewBoard.Designer.cs">
+      <DependentUpon>ViewBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="getExpiryDate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>getExpiryDate.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sales\Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales\Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Staff\StaffRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff\StaffRegistration.Designer.cs">
+      <DependentUpon>StaffRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\AddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\AddProduct.Designer.cs">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\CheckStock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\CheckStock.Designer.cs">
+      <DependentUpon>CheckStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock\ProductReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock\ProductReturn.Designer.cs">
+      <DependentUpon>ProductReturn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BlueControls\Footer.resx">
+      <DependentUpon>Footer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlueControls\Header.resx">
+      <DependentUpon>Header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlueControls\HeaderPages.resx">
+      <DependentUpon>HeaderPages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlueControls\Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard\ViewBoard.resx">
+      <DependentUpon>ViewBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales\Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Staff\StaffRegistration.resx">
+      <DependentUpon>StaffRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\AddProduct.resx">
+      <DependentUpon>AddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\CheckStock.resx">
+      <DependentUpon>CheckStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock\ProductReturn.resx">
+      <DependentUpon>ProductReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\UI.exe.config" />
+    <None Include="bin\Release\UI.exe.config" />
+    <None Include="bin\Release\UI.vshost.exe.config" />
+    <None Include="bin\Release\UI.vshost.exe.manifest" />
+    <None Include="blueinventoryDataSet.xsc">
+      <DependentUpon>blueinventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="blueinventoryDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>blueinventoryDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="blueinventoryDataSet.xss">
+      <DependentUpon>blueinventoryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="blueinventoryDataSet1.xsc">
+      <DependentUpon>blueinventoryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="blueinventoryDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>blueinventoryDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="blueinventoryDataSet1.xss">
+      <DependentUpon>blueinventoryDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="getExpiryDate.xsc">
+      <DependentUpon>getExpiryDate.xsd</DependentUpon>
+    </None>
+    <None Include="getExpiryDate.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>getExpiryDate.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="getExpiryDate.xss">
+      <DependentUpon>getExpiryDate.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TERMS AND CONDITIONS.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Billing\" />
+    <Folder Include="bin\Release\Data\" />
+    <Folder Include="Customers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blue.Models\SquareSoft.Blue.Models.csproj">
+      <Project>{e42658aa-3409-4c2c-b80b-2cf3dbba7dea}</Project>
+      <Name>SquareSoft.Blue.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Services\Services.csproj">
+      <Project>{fd277bd7-26f1-4155-84ae-d79d6499e7f9}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SquareSoft.Blue.DataAccessLayer\SquareSoft.Blue.DataAccessLayer.csproj">
+      <Project>{8202e61c-2afb-41d6-96bd-ae9e22ffa5a7}</Project>
+      <Name>SquareSoft.Blue.DataAccessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\copyright-icon-1600.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\UI.exe" />
+    <Content Include="bin\Debug\UI.pdb" />
+    <Content Include="bin\Release\Blue.Models.dll" />
+    <Content Include="bin\Release\Blue.Models.pdb" />
+    <Content Include="bin\Release\EntityFramework.dll" />
+    <Content Include="bin\Release\EntityFramework.xml" />
+    <Content Include="bin\Release\MaterialSkin.dll" />
+    <Content Include="bin\Release\MetroFramework.Design.dll" />
+    <Content Include="bin\Release\MetroFramework.dll" />
+    <Content Include="bin\Release\MetroFramework.Fonts.dll" />
+    <Content Include="bin\Release\Microsoft.AspNet.Identity.Core.dll" />
+    <Content Include="bin\Release\Microsoft.AspNet.Identity.Core.xml" />
+    <Content Include="bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll" />
+    <Content Include="bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml" />
+    <Content Include="bin\Release\Services.dll" />
+    <Content Include="bin\Release\Services.pdb" />
+    <Content Include="bin\Release\SquareSoft.Blue.DataAccessLayer.dll" />
+    <Content Include="bin\Release\SquareSoft.Blue.DataAccessLayer.pdb" />
+    <Content Include="bin\Release\UI.exe" />
+    <Content Include="bin\Release\UI.pdb" />
+    <Content Include="bin\Release\UI.vshost.exe" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,31 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace SquareSoft.Blue.UI.BlueControls
+{
+    public partial class HeaderPages : UserControl
+    {
+        public Login login = new Login();
+        
+        public HeaderPages()
+        {
+            InitializeComponent();
+        }
+        public string _username
+        {
+            set { lblWelcomeUser.Text = value; }
+            get { return lblWelcomeUser.Text; }
+        }
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+    }
+}

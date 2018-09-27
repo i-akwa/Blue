@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<!-- Select a Product Configuration -->
+		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
+		<!-- Select a Visual Studio Configuration / InstallShield Release -->
+		<Configuration>Debug</Configuration>
+		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- The InstallShieldProject item selects the project to build -->
+		<InstallShieldProject Include="$(MSBuildProjectDirectory)\$(MSBuildProjectName).isl"/>
+		<!-- The InstallShieldReleaseFlags sets Release Flags -->
+		<!--<InstallShieldReleaseFlags Include=""/>-->
+		<!-- The InstallShieldMergeModulePath specifies what directories are
+		searched for Merge Modules -->
+		<!--<InstallShieldMergeModulePath Include=""/>-->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The ProjectReference items refer to any Visual Studio solutions you want to automatically probe for Project Output Groups.  -->
+	</ItemGroup>
+	<ItemGroup>
+		<!-- The TaggedOutputs items allow you to explicitly add extra files to output groups. Each item must include both Name and OutputGroup, as well as TargetPath metadata values. -->
+		<!--<TaggedOutputs Include="C:\My Test Exe.exe">
+			<Name>My Test Project</Name>
+			<OutputGroup>Primary output</OutputGroup>
+			<TargetPath>My Test Exe.exe</TargetPath>
+		</TaggedOutputs> -->
+	</ItemGroup>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2015Limited\InstallShield.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="..\Services\Services.csproj">
+			<Name>Services</Name>
+			<Project>{FD277BD7-26F1-4155-84AE-D79D6499E7F9}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\SquareSoft.Blue.DataAccessLayer\SquareSoft.Blue.DataAccessLayer.csproj">
+			<Name>SquareSoft.Blue.DataAccessLayer</Name>
+			<Project>{8202E61C-2AFB-41D6-96BD-AE9E22FFA5A7}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\Blue.Models\SquareSoft.Blue.Models.csproj">
+			<Name>SquareSoft.Blue.Models</Name>
+			<Project>{E42658AA-3409-4C2C-B80B-2CF3DBBA7DEA}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\SquareSoft.Blue.UI\UI.csproj">
+			<Name>UI</Name>
+			<Project>{D808112F-EA84-4D99-819B-B461069BB0FA}</Project>
+		</ProjectReference>
+	</ItemGroup>
+</Project>
